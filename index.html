@@ -1,90 +1,30 @@
 <!doctype html>
-<html lang="en" ng-app>
+<html lang="en" ng-app='docs'>
 <head>
   <meta charset="UTF-8">
   <title>Objective</title>
-
   <link rel="stylesheet" href="assets/styles/app.css">
+  <meta name="viewport" content="width=device-width">
 </head>
-<body role="document">
-  <div class="master">
+<body role="document" ng-controller="DocsCtrl" style="opacity: 0" class="border_box_sizing">
 
-    <div class="sidebar" role="navigation" id="sidebar">
-
-      <input type="search" placeholder="Search" autofocus="autofocus">
-
-      <h4>About</h4>
-      <a href="#purpose">Purpose</a>
-      <a href="#usage">Usage</a>
-
-      <h4>Helpers</h4>
-      <a href="#alignment">Alignment</a>
-      <a href="#box-sizing">Box Sizing</a>
-      <a href="#filling">Filling</a>
-      <a href="#floating">Floating</a>
-      <a href="#hiding">Hiding</a>
-
-      <h4>Objects</h4>
-      <a href="#aspect-ratio">Aspect Ratio</a>
-      <a href="#clearfix">Clearfix</a>
-      <a href="#container">Container</a>
-      <a href="#core">Core</a>
-      <a href="#flag">Flag</a>
-      <a href="#image-replacement">Image Replacement</a>
-      <a href="#media">Media</a>
-
+  <div class="viewport">
+    <div class="sidebar" role="navigation" id="sidebar" ng-mouseleave="clearhash()">
+      <input type="text" ng-model="query" placeholder="Search" autofocus>
+      <a ng-repeat="navitem in navitems | filter: query" href="#{{navitem.id}}" class="{{navitem.tag}}">{{navitem.text}}</a>
     </div>
 
     <div class="main" role="main">
-
       <div class="container">
-
         <a href="#sidebar" class="open">☰</a>
-
-        <h1>Objective</h1>
-
-        <p>Donec id elit non mi porta gravida at eget metus. Vestibulum id ligula porta felis euismod semper. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Sed posuere consectetur est at lobortis. Nullam id dolor id nibh ultricies vehicula ut id elit. Cras justo odio, dapibus ac facilisis in, egestas eget quam.</p>
-
-        <h3>Elit Risus Dapibus Inceptos</h3>
-
-        <p>Maecenas sed diam eget risus varius blandit sit amet non magna. Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
-
-        <p>Nullam quis risus eget urna mollis ornare vel eu leo. Maecenas faucibus mollis interdum. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
-
-        <h3>Elit Risus Dapibus Inceptos</h3>
-
-        <p>Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Curabitur blandit tempus porttitor. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Aenean lacinia bibendum nulla sed consectetur.</p>
-
-        <p>Donec id elit non mi porta gravida at eget metus. Vestibulum id ligula porta felis euismod semper. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Sed posuere consectetur est at lobortis. Nullam id dolor id nibh ultricies vehicula ut id elit. Cras justo odio, dapibus ac facilisis in, egestas eget quam.</p>
-
-        <h3>Elit Risus Dapibus Inceptos</h3>
-
-        <p>Maecenas sed diam eget risus varius blandit sit amet non magna. Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
-
-        <p>Nullam quis risus eget urna mollis ornare vel eu leo. Maecenas faucibus mollis interdum. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
-
-        <h3>Elit Risus Dapibus Inceptos</h3>
-
-        <p>Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Curabitur blandit tempus porttitor. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Aenean lacinia bibendum nulla sed consectetur.</p>
-
-        <p>Donec id elit non mi porta gravida at eget metus. Vestibulum id ligula porta felis euismod semper. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Sed posuere consectetur est at lobortis. Nullam id dolor id nibh ultricies vehicula ut id elit. Cras justo odio, dapibus ac facilisis in, egestas eget quam.</p>
-
-        <h3>Elit Risus Dapibus Inceptos</h3>
-
-        <p>Maecenas sed diam eget risus varius blandit sit amet non magna. Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
-
-        <p>Nullam quis risus eget urna mollis ornare vel eu leo. Maecenas faucibus mollis interdum. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
-
-        <h3>Elit Risus Dapibus Inceptos</h3>
-
-        <p>Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Curabitur blandit tempus porttitor. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Aenean lacinia bibendum nulla sed consectetur.</p>
+        <div id="markdown"></div>
       </div>
-
     </div>
-
   </div>
 
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.1.4/angular.min.js" type="text/javascript"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/angular.js/1.1.5/angular.min.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/showdown/0.3.1/showdown.min.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/prettify/r298/prettify.js"></script>
   <script src="assets/scripts/app.js"></script>
 </body>
 </html>

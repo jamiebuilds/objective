@@ -1,71 +1,71 @@
 # Objective
 
-Maecenas sed diam eget risus varius blandit sit amet non magna. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Donec sed odio dui. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.
+**Collection of Useful CSS Objects and Helpers**
 
 ## About
 
-Maecenas sed diam eget risus varius blandit sit amet non magna. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Donec sed odio dui. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.
-
 ### Purpose
 
-Maecenas sed diam eget risus varius blandit sit amet non magna. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Donec sed odio dui. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.
+Objective is a `collection` of classes that can help write more modular and maintainable styles by following [OOCSS](http://coding.smashingmagazine.com/2011/12/12/an-introduction-to-object-oriented-css-oocss/) rules.
+
+Objective is not a framework in the typical sense. It's a project starter, a kickstart to building layouts. It's also not a grid, it works with any grid system you want (if you want).
 
 ### Usage
 
-Maecenas sed diam eget risus varius blandit sit amet non magna. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Donec sed odio dui. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.
+Use Objective like you would any set of styles. I'd recommend concatenating it with the rest of your styles.
 
 ## Helpers
 
-Maecenas sed diam eget risus varius blandit sit amet non magna. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Donec sed odio dui. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.
+Helpers are quick classes you can add to any element regardless of markup.
 
 ### Alignment
 
-Maecenas sed diam eget risus varius blandit sit amet non magna. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Donec sed odio dui. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.
+Align text left, right, center, or justified. By adding one of the classes `align--left`, `align--right`,  `align--center`, `align--justify`.
 
 ### Box Sizing
 
-Maecenas sed diam eget risus varius blandit sit amet non magna. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Donec sed odio dui. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.
+Change the default box model for the page to border-box by adding the `border_box_sizing` class to the body element. This will automatically adjust the `container` class.
 
 ### Filling
 
-Maecenas sed diam eget risus varius blandit sit amet non magna. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Donec sed odio dui. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.
+Fill an element to it's parent by adding the `fill` class.
 
 ### Floating
 
-Maecenas sed diam eget risus varius blandit sit amet non magna. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Donec sed odio dui. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.
+Float an element left or right by adding the classes `float--left` or `float--right` respectively.
+
+### Clearing
+
+Clear floats by adding the class `clear` to an element.
+
+Contain floats by adding the class `clearfix` to the floated elements parent element.
 
 ### Hiding
 
-Maecenas sed diam eget risus varius blandit sit amet non magna. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Donec sed odio dui. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.
+Hide an element from both [screenreaders and browsers](http://h5bp.com/u) by adding the class `hidden`.
 
-## Objects
+Hide an element only visually, but have it [available for screenreaders](http://h5bp.com/v) by adding the class `visuallyhidden`.
 
-Maecenas sed diam eget risus varius blandit sit amet non magna. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Donec sed odio dui. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.
+Extends the `visuallyhidden` class to allow the element to be [focusable when navigated to via the keyboard](http://h5bp.com/p) by adding the class `focusable`.
+
+Hide an element visually and from screenreaders, but maintain layout by adding the class `invisible`.
+
+Collapse an element by adding the `collapse` class.
+
+## Objects `[WIP]`
+
+Objects are groups of classes and/or classes that depend on markup.
 
 ### Aspect Ratio
 
-Maecenas sed diam eget risus varius blandit sit amet non magna. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Donec sed odio dui. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.
-
 ### Clearfix
-
-Maecenas sed diam eget risus varius blandit sit amet non magna. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Donec sed odio dui. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.
 
 ### Container
 
-Maecenas sed diam eget risus varius blandit sit amet non magna. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Donec sed odio dui. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.
-
 ### Core
-
-Maecenas sed diam eget risus varius blandit sit amet non magna. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Donec sed odio dui. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.
 
 ### Flag
 
-Maecenas sed diam eget risus varius blandit sit amet non magna. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Donec sed odio dui. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.
-
 ### Image Replacement
 
-Maecenas sed diam eget risus varius blandit sit amet non magna. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Donec sed odio dui. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.
-
 ### Media
-
-Maecenas sed diam eget risus varius blandit sit amet non magna. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Donec sed odio dui. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.

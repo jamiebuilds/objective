@@ -14,18 +14,6 @@ Objective is not a framework in the typical sense. It's a project starter, a kic
 
 Use Objective like you would any set of styles. I'd recommend concatenating it with the rest of your styles.
 
-### Contribute
-
-[Github Repo](https://github.com/thejameskyle/objective/) · [Issues](https://github.com/thejameskyle/objective/issues) · [Pull Requests](https://github.com/thejameskyle/objective/pulls)
-
-You may contribute to this library by submitting either an [issue report](https://github.com/thejameskyle/objective/issues) for a bug/request or a [pull request](https://github.com/thejameskyle/objective/pulls) for a code contribution.
-
-### License
-
-This project is provided under the terms of the [MIT License](LICENSE.md).
-
-
-
 ## Helpers
 
 Helpers are quick classes you can add to any element regardless of markup.
@@ -81,6 +69,20 @@ Objects are groups of classes and/or classes that depend on markup.
 ### Image Replacement
 
 ### Media
+
+---
+
+## Project
+
+### Contribute
+
+[Github Repo](https://github.com/thejameskyle/objective/) · [Issues](https://github.com/thejameskyle/objective/issues) · [Pull Requests](https://github.com/thejameskyle/objective/pulls)
+
+You may contribute to this library by submitting either an [issue report](https://github.com/thejameskyle/objective/issues) for a bug/request or a [pull request](https://github.com/thejameskyle/objective/pulls) for a code contribution.
+
+### License
+
+This project is provided under the terms of the [MIT License](LICENSE.md).
 
 ---
 

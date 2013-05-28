@@ -20,37 +20,45 @@ Helpers are quick classes you can add to any element regardless of markup.
 
 ### Alignment
 
-Align text left, right, center, or justified. By adding one of the classes `align--left`, `align--right`,  `align--center`, `align--justify`.
+**`align--left`** Aligns text left.
+
+**`align--right`** Aligns text right.
+
+**`align--center`** Centers text.
+
+**`align--justify`** Justifies Text.
 
 ### Box Sizing
 
-Change the default box model for the page to border-box by adding the `border_box_sizing` class to the body element. This will automatically adjust the `container` class.
+**`border_box_sizing`** Change the default box model for the page to border-box by adding to the body element. This will automatically adjust the `container` object.
 
 ### Filling
 
-Fill an element to it's parent by adding the `fill` class.
+**`fill`** Fills an element horizontally to its parent.
 
 ### Floating
 
-Float an element left or right by adding the classes `float--left` or `float--right` respectively.
+**`float--left`** Floats an element left.
+
+**`float--right`** Floats an element right.
 
 ### Clearing
 
-Clear floats by adding the class `clear` to an element.
+**`clear`** Clears all floats.
 
-Contain floats by adding the class `clearfix` to the floated elements parent element.
+Also: [Clearfix](#clearfix)
 
 ### Hiding
 
-Hide an element from both [screenreaders and browsers](http://h5bp.com/u) by adding the class `hidden`.
+**`hidden`** Hide an element from both [screenreaders and browsers](http://h5bp.com/u).
 
-Hide an element only visually, but have it [available for screenreaders](http://h5bp.com/v) by adding the class `visuallyhidden`.
+**`visuallyhidden`** Hide an element only visually, but have it [available for screenreaders](http://h5bp.com/v).
 
-Extends the `visuallyhidden` class to allow the element to be [focusable when navigated to via the keyboard](http://h5bp.com/p) by adding the class `focusable`.
+**`focusable`** Extends the `visuallyhidden` helper to allow the element to be [focusable when navigated to via the keyboard](http://h5bp.com/p).
 
-Hide an element visually and from screenreaders, but maintain layout by adding the class `invisible`.
+**`invisible`** Hide an element visually and from screenreaders, but maintain layout.
 
-Collapse an element by adding the `collapse` class.
+**`collapse`** Collapse an element.
 
 ## Objects `[WIP]`
 
@@ -58,17 +66,105 @@ Objects are groups of classes and/or classes that depend on markup.
 
 ### Aspect Ratio
 
+by [Thierry Koblentz (A List Apart)](http://alistapart.com/article/creating-intrinsic-ratios-for-video)
+
+**`aspect`** The base class that sets the ratio.
+
+**`aspect-content`** An inner class that helps position the target.
+
+**`aspect-target`** Sets the target to be positioned (ie. iframe, video).
+
+**`aspect--{{ratio}}`** Modifies the base class (`aspect`) to have a different ratio. Included `{{ratio}}`s are `1x1`, `square`, `5x4`, `4x3`, `standard`, `3x2`, `8x5`, `16x10`, `5x3`, `16x9`, `hd`, `17x9`.
+
+
+```
+<div class="aspect aspect--hd">
+  <div class="aspect-content">
+    <video class="aspect-target">...</video>
+  </div>
+</div>
+```
+
 ### Clearfix
+
+by [Nicolas Gallagher](http://nicolasgallagher.com/micro-clearfix-hack/)
+
+**`clearfix`** Add the micro-clearfix hack to self-contain floats using pseudo elements.
+
+```
+<div class="clearfix">
+  <div class="float--left">...</div>
+  <div class="float--left">...</div>
+  <div class="float--left">...</div>
+</div>
+```
 
 ### Container
 
+**`container`** Sets the max width to the element and centers it horizontally with gutters on either side. Replace if using a grid system. Is modified by the `border_box_sizing` helper.
+
+**`container container`** Same as above but no longer has gutters.
+
+```
+<div class="container">
+  ...
+  <div class="container">...</div>
+</div>
+```
+
 ### Core
+
+**`core`** Base class that sets the vertical alignment of the content. Defaults to centered.
+
+**`core-content`** An inner class that positions the content.
+
+**`core--[top/bottom]`** Modifies the vertical alignment on the base class to either top or bottom.
+
+```
+<div class="core core--bottom">
+  <div class="core-content">...</div>
+</div>
+```
 
 ### Flag
 
-### Image Replacement
+by [Harry Roberts (CSS Wizardry)](http://csswizardry.com/2013/05/the-flag-object/)
+
+**`flag`** Base class that positions and vertically aligns the target and content. Defaults to centered.
+
+**`flag-target`** A target class that positions the media correctly.
+
+**`flag-content`** An inner class that positions the content correctly.
+
+**`flag-[top/bottom]`** Modifier classes that sets the vertical alignment on the base class to either top or bottom.
+
+```
+<div class="flag flag--bottom">
+  <div class="flag-target">
+    <img src="image.png">
+  </div>
+  <div class="flag-content">...</div>
+</div>
+```
+
+### Image Replacement **`[WIP]`**
 
 ### Media
+
+by [Nicole Sullivan](http://www.stubbornella.org/content/2010/06/25/the-media-object-saves-hundreds-of-lines-of-code/)
+
+**`media`** Base class that helps position (includes clearfix).
+
+**`media-content`**
+
+> This works with the `float--left` and `float--right` classes to position the media to either side.
+
+```
+<div class="media">
+  <img class="float--left" src="image.png">
+  <div class="media-content">...</div>
+</div>
+```
 
 ---
 

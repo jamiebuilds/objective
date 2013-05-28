@@ -208,6 +208,11 @@
 .media::before,
 .media::after {
   content: " ";
+  display: table;
+}
+
+.media::after {
+  clear: both;
 }
 
 .media-content {
@@ -226,17 +231,17 @@
   vertical-align: middle;
 }
 
-.flag-body,
-.flag-image {
+.flag-content,
+.flag-target {
   display: table-cell;
   vertical-align: inherit;
 }
 
-.flag-body {
+.flag-content {
   width: 100%;
 }
 
-.flag-image > img {
+.flag-target > * {
   display: block;
 }
 
@@ -258,7 +263,7 @@
   vertical-align: middle;
 }
 
-.core-inner {
+.core-content {
   display: table-cell;
   vertical-align: inherit;
 }
@@ -275,7 +280,7 @@
  * Aspect Ratio
  */
 
-.aspect-ratio {
+.aspect {
   position: relative;
   height: 0;
   padding-bottom: 61.8047%;
@@ -285,14 +290,12 @@
   position: absolute;
 }
 
-.aspect-target,
-.aspect-content > iframe {
+.aspect-target {
   position: relative;
 }
 
 .aspect-content,
-.aspect-target,
-.aspect-content > iframe {
+.aspect-target {
   width: 100%;
   height: 100%;
 }

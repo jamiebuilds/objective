@@ -24,6 +24,8 @@ You may contribute to this library by submitting either an [issue report](https:
 
 This project is provided under the terms of the [MIT License](LICENSE.md).
 
+
+
 ## Helpers
 
 Helpers are quick classes you can add to any element regardless of markup.
@@ -79,3 +81,9 @@ Objects are groups of classes and/or classes that depend on markup.
 ### Image Replacement
 
 ### Media
+
+---
+
+Authored by **James Kyle** · [Github](http://github.com/thejameskyle) · [Twitter](http://twitter.com/thejameskyle) · [CodePen](http://codepen.io/thejameskyle)
+
+Built Equal · Made in Boston

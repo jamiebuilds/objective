@@ -20,6 +20,10 @@ Use Objective like you would any set of styles. I'd recommend concatenating it w
 
 You may contribute to this library by submitting either an [issue report](https://github.com/thejameskyle/objective/issues) for a bug/request or a [pull request](https://github.com/thejameskyle/objective/pulls) for a code contribution.
 
+### License
+
+This project is provided under the terms of the [MIT License](LICENSE.md).
+
 ## Helpers
 
 Helpers are quick classes you can add to any element regardless of markup.

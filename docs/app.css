@@ -399,6 +399,14 @@ table {
    Structure
    ========================================================================== */
 
+*,
+::before,
+::after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
 html, body {
   position: relative;
   width: 100%;
@@ -438,6 +446,19 @@ html, body {
 
 .open {
   display: none;
+}
+
+.container {
+  max-width: 1000px;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.container .container {
+  padding-left: 0;
+  padding-right: 0;
 }
 
 @media (max-width: 720px) {

@@ -444,7 +444,8 @@ html, body {
   transform: scale3d(1, 1, 1);
 }
 
-.open {
+.sidebar-open,
+.sidebar-close {
   display: none;
 }
 
@@ -462,7 +463,7 @@ html, body {
 }
 
 @media (max-width: 720px) {
-  .open {
+  .sidebar-open {
     display: block;
   }
 
@@ -483,6 +484,14 @@ html, body {
   .sidebar:target + .main {
     left: 200px;
     right: -200px;
+  }
+
+  .sidebar:target + .main .sidebar-open {
+    display: none;
+  }
+
+  .sidebar:target + .main .sidebar-close {
+    display: block;
   }
 }
 
@@ -513,7 +522,7 @@ input, button, select, textarea {
   background: white;
 }
 
-.open {
+.sidebar-control {
   width: auto;
   padding: 0.25em 0.5em;
   margin-bottom: 10px;

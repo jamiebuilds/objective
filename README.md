@@ -2,6 +2,9 @@
 
 **Collection of Useful CSS Objects and Helpers**
 
+<a href="objective.css" class="button button--primary">Objective.css</a>
+<a href="http://github.com/thejameskyle/objective" class="button">Objective on GitHub</a>
+
 ## About
 
 ### Purpose

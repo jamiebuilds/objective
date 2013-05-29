@@ -28,10 +28,6 @@ Helpers are quick classes you can add to any element regardless of markup.
 
 **`align--justify`** Justifies Text.
 
-### Box Sizing
-
-**`border_box_sizing`** Change the default box model for the page to border-box by adding to the body element. This will automatically adjust the `container` object.
-
 ### Filling
 
 **`fill`** Fills an element horizontally to its parent.
@@ -96,19 +92,6 @@ by [Nicolas Gallagher](http://nicolasgallagher.com/micro-clearfix-hack/)
   <div class="float--left">...</div>
   <div class="float--left">...</div>
   <div class="float--left">...</div>
-</div>
-```
-
-### Container
-
-**`container`** Sets the max width to the element and centers it horizontally with gutters on either side. Replace if using a grid system. Is modified by the `border_box_sizing` helper.
-
-**`container container`** Same as above but no longer has gutters.
-
-```
-<div class="container">
-  ...
-  <div class="container">...</div>
 </div>
 ```
 

@@ -5,22 +5,6 @@
    ========================================================================== */
 
 /**
- * Border box sizing (apply to body element, never leave it like this)
- */
-
-.border_box_sizing *,
-.border_box_sizing *::before,
-.border_box_sizing *::after, {
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
-}
-
-.border_box_sizing .container {
-  max-width: 1000px;
-}
-
-/**
  * Alignment
  */
 
@@ -176,25 +160,6 @@
 
 .clearfix::after {
   clear: both;
-}
-
-/**
- * Container (Make sure to overwrite the max-width property if necessary)
- */
-
-.container {
-  display: block;
-  float: none;
-  max-width: 960px;
-  margin-left: auto;
-  margin-right: auto;
-  padding-left: 20px;
-  padding-right: 20px;
-}
-
-.container .container {
-  padding-left: 0;
-  padding-right: 0p;
 }
 
 /**

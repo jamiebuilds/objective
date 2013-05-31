@@ -289,4 +289,8 @@ window.onhashchange = function() {
   } else if (window.location.hash === '#sidebar') {
     document.getElementById('search').focus();
   }
+
+  if (window.location.hash !== '#sidebar') {
+    document.getElementById('search').value = '';
+  }
 };

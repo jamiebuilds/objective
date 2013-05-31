@@ -274,10 +274,19 @@ App.controller('DocsCtrl', function($scope, $http) {
     $scope.convert();
     document.body.style.opacity = '';
   });
+
+  $scope.search_submit = function() {
+    var navitems = document.getElementsByClassName('navitem');
+    if (navitems.length === 1) {
+      window.location.hash = navitems[0].getAttribute('href');
+    }
+  };
 });
 
 window.onhashchange = function() {
   if (window.location.hash === '#' + topid) {
     window.location.replace(('' + window.location).split('#')[0] + '#');
+  } else if (window.location.hash === '#sidebar') {
+    document.getElementById('search').focus();
   }
 };

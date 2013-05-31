@@ -12,14 +12,14 @@
 <body role="document" ng-controller="DocsCtrl" style="opacity: 0" class="border_box_sizing">
 
   <div class="viewport">
-    <div class="sidebar" role="navigation" id="sidebar" ng-mouseleave="clearhash()">
-      <input type="text" ng-model="query" placeholder="Search" autofocus>
-      <a ng-repeat="navitem in navitems | filter: query" href="#{{navitem.id}}" class="{{navitem.tag}}">{{navitem.text}}</a>
-    </div>
+    <form class="sidebar" role="navigation" id="sidebar" ng-submit="search_submit()">
+      <input type="text" id="search" ng-model="query" placeholder="Search" autofocus>
+      <a ng-repeat="navitem in navitems | filter: query" href="#{{navitem.id}}" class="navitem {{navitem.tag}}">{{navitem.text}}</a>
+    </form>
 
     <div class="main" role="main">
       <div class="container">
-        <a href="#sidebar" class="sidebar-control sidebar-open">☰</a>
+        <a href="#sidebar" class="sidebar-control sidebar-open" ng-click="search_focus()">☰</a>
         <a href="#" class="sidebar-control sidebar-close">☰</a>
         <div id="markdown"></div>
       </div>

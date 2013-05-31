@@ -440,7 +440,7 @@ html, body {
 
 .main, .sidebar {
   transition: 0.2s ease;
-  transition-property: left, right, margin, padding;
+  transition-property: left, right, margin, padding, visibility;
   transform: scale3d(1, 1, 1);
 }
 
@@ -470,6 +470,7 @@ html, body {
   .sidebar {
     left: -200px;
     overflow-y: hidden;
+    visibility: hidden;
   }
 
   .main {
@@ -479,6 +480,7 @@ html, body {
   .sidebar:target {
     left: 0;
     overflow-y: auto;
+    visibility: visible;
   }
 
   .sidebar:target + .main {
@@ -538,8 +540,7 @@ input, button, select, textarea {
 
 .sidebar {
   background: #333333;
-  border-left: 3px solid #449cc8;
-  box-shadow: inset -6px 0 6px -6px rgba(0, 0, 0, 0.4);
+  box-shadow: inset -6px 0 6px -6px rgba(0, 0, 0, 0.4), inset 3px 0 0 #449cc8;
 }
 
 .sidebar a:focus,
@@ -554,10 +555,12 @@ input, button, select, textarea {
   padding: 0.5em 1em;
   color: white;
   border: none;
+  border-left: 3px solid transparent;
   text-decoration: none;
 }
 
 .sidebar a:hover {
+  border-left-color: #56C6FF;
   background: rgba(255, 255, 255, 0.1);
 }
 

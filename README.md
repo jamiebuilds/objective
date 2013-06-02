@@ -49,15 +49,15 @@ Also: [Clearfix](#clearfix)
 
 ### Hiding
 
+**`collapse`** Collapse an element.
+
 **`hidden`** Hide an element from both [screenreaders and browsers](http://h5bp.com/u).
+
+**`invisible`** Hide an element visually and from screenreaders, but maintain layout.
 
 **`visuallyhidden`** Hide an element only visually, but have it [available for screenreaders](http://h5bp.com/v).
 
 **`focusable`** Extends the `visuallyhidden` helper to allow the element to be [focusable when navigated to via the keyboard](http://h5bp.com/p).
-
-**`invisible`** Hide an element visually and from screenreaders, but maintain layout.
-
-**`collapse`** Collapse an element.
 
 ### Image Replacement
 
@@ -103,6 +103,8 @@ by [Nicolas Gallagher](http://nicolasgallagher.com/micro-clearfix-hack/)
 ```
 
 ### Core
+
+by [James Kyle](https://twitter.com/thejameskyle)
 
 **`core`** Base class that sets the vertical alignment of the content. Defaults to centered.
 

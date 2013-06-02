@@ -25,6 +25,24 @@
 }
 
 /**
+ * Fill
+ */
+
+.fill {
+  width: 100%;
+}
+
+/**
+ * Maximize
+ */
+
+.maximize {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+/**
  * Floating
  */
 
@@ -45,24 +63,6 @@
 }
 
 /**
- * Maximize
- */
-
-.maximize {
-  position: relative;
-  width: 100%;
-  height: 100%;
-}
-
-/**
- * Fill
- */
-
-.fill {
-  width: 100%;
-}
-
-/**
  * Collapse
  */
 
@@ -75,30 +75,19 @@
 }
 
 /**
- * Image Replacement
- */
-
-.img {
-  background-color: transparent;
-  border: 0;
-  overflow: hidden;
-  /* IE 6/7 fallback */
-  *text-indent: 150%;
-}
-
-.img:before {
-  content: "";
-  display: block;
-  width: 0;
-  height: 150%;
-}
-
-/**
  * Hide from both screenreaders and browsers: h5bp.com/u
  */
 
 .hidden {
   display: none !important;
+  visibility: hidden;
+}
+
+/**
+ * Hide visually and from screenreaders, but maintain layout
+ */
+
+.invisible {
   visibility: hidden;
 }
 
@@ -133,113 +122,27 @@
 }
 
 /**
- * Hide visually and from screenreaders, but maintain layout
+ * Image Replacement
  */
 
-.invisible {
-  visibility: hidden;
+.img {
+  background-color: transparent;
+  border: 0;
+  overflow: hidden;
+  /* IE 6/7 fallback */
+  *text-indent: 150%;
+}
+
+.img:before {
+  content: "";
+  display: block;
+  width: 0;
+  height: 150%;
 }
 
 /* ==========================================================================
    Objects
    ========================================================================== */
-
-/**
- * Clearfix
- */
-
-.clearfix {
-  *zoom: 1;
-}
-
-.clearfix::before,
-.clearfix::after {
-  content: " ";
-  display: table;
-}
-
-.clearfix::after {
-  clear: both;
-}
-
-/**
- * Media
- */
-
-.media {
-  *zoom: 1;
-}
-
-.media::before,
-.media::after {
-  content: " ";
-  display: table;
-}
-
-.media::after {
-  clear: both;
-}
-
-.media-content {
-  overflow: hidden;
-  _overflow: visible;
-  zoom: 1;
-}
-
-/**
- * Flag
- */
-
-.flag {
-  display: table;
-  width: 100%;
-  vertical-align: middle;
-}
-
-.flag-content,
-.flag-target {
-  display: table-cell;
-  vertical-align: inherit;
-}
-
-.flag-content {
-  width: 100%;
-}
-
-.flag-target > * {
-  display: block;
-}
-
-.flag--top {
-  vertical-align: top;
-}
-
-.flag--bottom {
-  vertical-align: bottom;
-}
-
-/**
- * Core
- */
-
-.core {
-  display: table;
-  width: 100%;
-  vertical-align: middle;
-}
-
-.core-content {
-  display: table-cell;
-  vertical-align: inherit;
-}
-
-.core--top {
-  vertical-align: top;
-}
-
-.core--bottom {
-  vertical-align: bottom;
-}
 
 /**
  * Aspect Ratio
@@ -299,4 +202,101 @@
 
 .aspect--17x9 {
   padding-bottom: 47.05882%;
+}
+
+/**
+ * Clearfix
+ */
+
+.clearfix {
+  *zoom: 1;
+}
+
+.clearfix::before,
+.clearfix::after {
+  content: " ";
+  display: table;
+}
+
+.clearfix::after {
+  clear: both;
+}
+
+/**
+ * Core
+ */
+
+.core {
+  display: table;
+  width: 100%;
+  vertical-align: middle;
+}
+
+.core-content {
+  display: table-cell;
+  vertical-align: inherit;
+}
+
+.core--top {
+  vertical-align: top;
+}
+
+.core--bottom {
+  vertical-align: bottom;
+}
+
+/**
+ * Flag
+ */
+
+.flag {
+  display: table;
+  width: 100%;
+  vertical-align: middle;
+}
+
+.flag-content,
+.flag-target {
+  display: table-cell;
+  vertical-align: inherit;
+}
+
+.flag-content {
+  width: 100%;
+}
+
+.flag-target > * {
+  display: block;
+}
+
+.flag--top {
+  vertical-align: top;
+}
+
+.flag--bottom {
+  vertical-align: bottom;
+}
+
+/**
+ * Media
+ */
+
+.media {
+  *zoom: 1;
+}
+
+.media::before,
+.media::after {
+  content: " ";
+  display: table;
+}
+
+.media::after {
+  clear: both;
+}
+
+.media-content {
+  overflow: hidden;
+  _overflow: visible;
+  zoom: 1;
 }

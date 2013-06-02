@@ -285,19 +285,22 @@ App.controller('DocsCtrl', function($scope, $http) {
 });
 
 window.onload = function() {
-  if ( window.location.hash === '#sidebar' ) {
+  var hash = window.location.hash;
+  if ( hash === '#sidebar' || ('' + window.location).split('#').length === 2 && hash === '' ) {
     window.location.replace(('' + window.location).split('#')[0]);
   }
 };
 
 window.onhashchange = function() {
-  if (window.location.hash === '#' + topid) {
+  var hash = window.location.hash;
+
+  if ( hash === '#' + topid ) {
     window.location.replace(('' + window.location).split('#')[0] + '#');
-  } else if (window.location.hash === '#sidebar') {
+  } else if ( hash === '#sidebar' ) {
     document.getElementById('search').focus();
   }
 
-  if (window.location.hash !== '#sidebar') {
+  if (hash !== '#sidebar') {
     document.getElementById('search').value = '';
   }
 };

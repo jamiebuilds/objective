@@ -272,7 +272,8 @@ App.controller('DocsCtrl', function($scope, $http) {
       window.location.replace(('' + window.location).split('#')[0] + hash);
     }
     $scope.convert();
-    document.body.style.opacity = '';
+
+    document.getElementsByClassName('viewport')[0].style.opacity = '1';
   });
 
   $scope.search_submit = function() {
@@ -282,6 +283,12 @@ App.controller('DocsCtrl', function($scope, $http) {
     }
   };
 });
+
+window.onload = function() {
+  if ( window.location.hash === '#sidebar' ) {
+    window.location.replace(('' + window.location).split('#')[0]);
+  }
+};
 
 window.onhashchange = function() {
   if (window.location.hash === '#' + topid) {

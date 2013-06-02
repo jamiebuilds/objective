@@ -9,9 +9,15 @@
   <link rel="stylesheet" href="docs/app.css">
   <meta name="viewport" content="width=device-width">
 </head>
-<body role="document" ng-controller="DocsCtrl" style="opacity: 0" class="border_box_sizing">
+<body role="document" ng-controller="DocsCtrl" class="border_box_sizing">
 
-  <div class="viewport">
+  <div class="intro core maximize">
+    <div class="core-content">
+      <h1>Objective</h1>
+    </div>
+  </div>
+
+  <div class="viewport" style="opacity: 0">
     <form class="sidebar" role="navigation" id="sidebar" ng-submit="search_submit()">
       <input type="text" id="search" ng-model="query" placeholder="Search" autofocus autocomplete="off">
       <a ng-repeat="navitem in navitems | filter: query" href="#{{navitem.id}}" class="navitem {{navitem.tag}}">{{navitem.text}}</a>

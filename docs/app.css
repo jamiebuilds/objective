@@ -508,11 +508,43 @@ body {
   color: #444;
   font: normal 1em/1.4 "Helvetica Neue", Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
+}
 
+.intro {
+  position: absolute;
+  text-align: center;
+  overflow: hidden;
+  -ms-word-break: break-all;
+  word-break: break-all;
+  word-break: break-word;
+}
+
+.intro h1 {
+  margin: 0;
+  font-size: 5em;
+  color: #eee;
+  letter-spacing: -0.05em;
+
+  -webkit-text-fill-color: transparent;
+  background-image: -webkit-linear-gradient(#ccc, #ccc);
+  -webkit-background-clip: text;
+  text-shadow: 0 1px 3px rgba(255, 255, 255, 0.5);
+
+  -webkit-animation: fade-in 0.6s ease;
+  -moz-animation: fade-in 0.6s ease;
+  animation: fade-in 0.6s ease;
+}
+
+@-webkit-keyframes fade-in { 0%, 50% { opacity: 0 } }
+@-moz-keyframes fade-in { 0%, 50% { opacity: 0 } }
+@keyframes fade-in { 0%, 50% { opacity: 0 } }
+
+.viewport {
   -webkit-transition: opacity 0.25s ease;
   -moz-transition: opacity 0.25s ease;
   transition: opacity 0.25s ease;
 }
+
 
 input, button, select, textarea {
   -webkit-font-smoothing: inherit;

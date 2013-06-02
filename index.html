@@ -13,7 +13,7 @@
 
   <div class="viewport">
     <form class="sidebar" role="navigation" id="sidebar" ng-submit="search_submit()">
-      <input type="text" id="search" ng-model="query" placeholder="Search" autofocus>
+      <input type="text" id="search" ng-model="query" placeholder="Search" autofocus autocomplete="off">
       <a ng-repeat="navitem in navitems | filter: query" href="#{{navitem.id}}" class="navitem {{navitem.tag}}">{{navitem.text}}</a>
     </form>
 

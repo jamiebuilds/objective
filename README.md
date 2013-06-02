@@ -59,6 +59,10 @@ Also: [Clearfix](#clearfix)
 
 **`collapse`** Collapse an element.
 
+### Image Replacement
+
+**`img`** Hides text. Use with additional styling to add a height, width, and background. Must set height and width in order to hide text properly.
+
 ## Objects `[WIP]`
 
 Objects are groups of classes and/or classes that depend on markup.
@@ -132,8 +136,6 @@ by [Harry Roberts (CSS Wizardry)](http://csswizardry.com/2013/05/the-flag-object
   <div class="flag-content">...</div>
 </div>
 ```
-
-### Image Replacement **`[WIP]`**
 
 ### Media
 

@@ -63,7 +63,7 @@ Also: [Clearfix](#clearfix)
 
 **`img`** Hides text. Use with additional styling to add a height, width, and background. Must set height and width in order to hide text properly.
 
-## Objects `[WIP]`
+## Objects
 
 Objects are groups of classes and/or classes that depend on markup.
 

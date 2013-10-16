@@ -1,0 +1,54 @@
+{
+  "name": "objective",
+  "version": "0.0.2",
+  "description": "Collection of CSS Objects and Helpers",
+  "keywords": [
+  ],
+  "homepage": "https://tctcl.github.com/objective",
+  "bugs": "https://github.com/tctcl/objective/issues",
+  "author": {
+    "name": "Tactical",
+    "url": "https://github.com/tctcl"
+  },
+  "contributors": [
+    {
+      "name": "James Kyle",
+      "email": "me@thejameskyle.com",
+      "url": "https://github.com/thejameskyle"
+    }
+  ],
+  "main": "",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/tctcl/objective.git"
+  },
+  "scripts": {
+    "test": "grunt test"
+  },
+  "files": [
+    "dist/",
+    "tasks/"
+  ],
+  "bin": {},
+  "dependencies": {
+    "grunt": "~0.4.1",
+    "grunt-contrib-sass": "~0.5.0",
+    "grunt-contrib-watch": "~0.5.3",
+    "grunt-init": "~0.2.1",
+    "colors": "~0.6.2"
+  },
+  "devDependencies": {},
+  "peerDependencies": {
+    "grunt": "~0.4.1"
+  },
+  "engines": {
+    "node": ">=0.8.0",
+    "npm": ">=1.2.10"
+  },
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "https://github.com/tctcl/objective/blob/master/LICENSE.md"
+    }
+  ]
+}

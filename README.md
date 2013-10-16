@@ -1,5 +1,7 @@
 # Objective
 
+Dotfiles [![Build Status](https://travis-ci.org/tctcl/objective.png?branch=master)](https://travis-ci.org/tctcl/objective) [![Dependency Status](https://david-dm.org/tctcl/objective.png)](https://david-dm.org/tctcl/objective) [![devDependency Status](https://david-dm.org/tctcl/objective/dev-status.png)](https://david-dm.org/tctcl/objective#info=devDependencies)
+
 **Collection of Useful CSS Objects and Helpers**
 
 <a href="objective.css" class="button button--primary">Objective.css</a>
@@ -174,4 +176,4 @@ This project is provided under the terms of the [MIT License](LICENSE.md).
 
 Authored by **James Kyle** · [Github](http://github.com/thejameskyle) · [Twitter](http://twitter.com/thejameskyle) · [CodePen](http://codepen.io/thejameskyle)
 
-Built Equal · Made in Boston
+[Built Equal](www.hrc.org/donate) · [Made in Boston](http://bostonbuilt.org/)

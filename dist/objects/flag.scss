@@ -1,0 +1,31 @@
+/**
+ * Flag
+ */
+
+.flag {
+  display: table;
+  width: 100%;
+  vertical-align: middle;
+}
+
+.flag-content,
+.flag-target {
+  display: table-cell;
+  vertical-align: inherit;
+}
+
+.flag-content {
+  width: 100%;
+}
+
+.flag-target > * {
+  display: block;
+}
+
+.flag--top {
+  vertical-align: top;
+}
+
+.flag--bottom {
+  vertical-align: bottom;
+}

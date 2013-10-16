@@ -1,0 +1,23 @@
+/**
+ * Media
+ */
+
+.media {
+  *zoom: 1;
+}
+
+.media::before,
+.media::after {
+  content: " ";
+  display: table;
+}
+
+.media::after {
+  clear: both;
+}
+
+.media-content {
+  overflow: hidden;
+  _overflow: visible;
+  zoom: 1;
+}

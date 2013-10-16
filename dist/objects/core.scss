@@ -1,0 +1,22 @@
+/**
+ * Core
+ */
+
+.core {
+  display: table;
+  width: 100%;
+  vertical-align: middle;
+}
+
+.core-content {
+  display: table-cell;
+  vertical-align: inherit;
+}
+
+.core--top {
+  vertical-align: top;
+}
+
+.core--bottom {
+  vertical-align: bottom;
+}

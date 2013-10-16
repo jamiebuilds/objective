@@ -1,0 +1,9 @@
+{
+    "name": "normalize-sass",
+    "version": "1.0.0",
+    "main": "normalize.sass",
+    "author": "Nicolas Gallagher, Petr Parkov",
+    "ignore": [
+        ".gitignore"
+    ]
+}

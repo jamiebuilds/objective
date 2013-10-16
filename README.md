@@ -1,6 +1,4 @@
-# Objective
-
-Dotfiles [![Build Status](https://travis-ci.org/tctcl/objective.png?branch=master)](https://travis-ci.org/tctcl/objective) [![Dependency Status](https://david-dm.org/tctcl/objective.png)](https://david-dm.org/tctcl/objective) [![devDependency Status](https://david-dm.org/tctcl/objective/dev-status.png)](https://david-dm.org/tctcl/objective#info=devDependencies)
+# Objective [![Build Status](https://travis-ci.org/tctcl/objective.png?branch=master)](https://travis-ci.org/tctcl/objective) [![Dependency Status](https://david-dm.org/tctcl/objective.png)](https://david-dm.org/tctcl/objective) [![devDependency Status](https://david-dm.org/tctcl/objective/dev-status.png)](https://david-dm.org/tctcl/objective#info=devDependencies)
 
 **Collection of Useful CSS Objects and Helpers**
 

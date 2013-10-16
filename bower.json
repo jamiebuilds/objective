@@ -1,0 +1,15 @@
+{
+  "name": "Objective",
+  "version": "0.0.2",
+  "homepage": "http://github.com/tctcl/objective",
+  "main": "dist/",
+  "ignore": [
+    "test",
+    ".editorconfig",
+    ".gitattributes",
+    ".gitignore",
+    ".jshintrc",
+    ".travis.yml",
+    "Gruntfile.coffee"
+  ]
+}

@@ -2,21 +2,21 @@
  * Media
  */
 
-.media {
+#{objective( "media" )} {
   *zoom: 1;
+
+  &::before,
+  &::after {
+    content: " ";
+    display: table;
+  }
+
+  &::after {
+    clear: both;
+  }
 }
 
-.media::before,
-.media::after {
-  content: " ";
-  display: table;
-}
-
-.media::after {
-  clear: both;
-}
-
-.media-content {
+#{objective( "media-content" )} {
   overflow: hidden;
   _overflow: visible;
   zoom: 1;

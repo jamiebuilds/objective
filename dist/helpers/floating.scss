@@ -2,10 +2,10 @@
  * Floating
  */
 
-.float--left {
+#{objective( "float--left" )} {
   float: left;
 }
 
-.float--right {
+#{objective( "float--right" )} {
   float: right;
 }

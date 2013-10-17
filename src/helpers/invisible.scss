@@ -3,6 +3,6 @@
  * Hide visually and from screenreaders, but maintain layout
  */
 
-.invisible {
+#{objective( "invisible" )} {
   visibility: hidden;
 }

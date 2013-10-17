@@ -2,30 +2,30 @@
  * Flag
  */
 
-.flag {
+#{objective( "flag" )} {
   display: table;
   width: 100%;
   vertical-align: middle;
 }
 
-.flag-content,
-.flag-target {
+#{objective( "flag-content" )},
+#{objective( "flag-target" )} {
   display: table-cell;
   vertical-align: inherit;
 }
 
-.flag-content {
+#{objective( "flag-content" )} {
   width: 100%;
 }
 
-.flag-target > * {
+#{objective( "flag-target > *" )} {
   display: block;
 }
 
-.flag--top {
+#{objective( "flag--top" )} {
   vertical-align: top;
 }
 
-.flag--bottom {
+#{objective( "flag--bottom" )} {
   vertical-align: bottom;
 }

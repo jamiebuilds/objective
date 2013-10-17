@@ -2,21 +2,21 @@
  * Core
  */
 
-.core {
+#{objective( "core" )} {
   display: table;
   width: 100%;
   vertical-align: middle;
 }
 
-.core-content {
+#{objective( "core-content" )} {
   display: table-cell;
   vertical-align: inherit;
 }
 
-.core--top {
+#{objective( "core--top" )} {
   vertical-align: top;
 }
 
-.core--bottom {
+#{objective( "core--bottom" )} {
   vertical-align: bottom;
 }

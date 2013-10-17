@@ -3,7 +3,7 @@
  * Hide from both screenreaders and browsers: h5bp.com/u
  */
 
-.hidden {
+#{objective( "hidden" )} {
   display: none !important;
   visibility: hidden;
 }

@@ -2,18 +2,18 @@
  * Alignment
  */
 
-.align--left {
+#{objective( "align--left" )} {
   text-align: left;
 }
 
-.align--center {
+#{objective( "align--center" )} {
   text-align: center;
 }
 
-.align--right {
+#{objective( "align--right" )} {
   text-align: right;
 }
 
-.align--justify {
+#{objective( "align--justify" )} {
   text-align: justify;
 }

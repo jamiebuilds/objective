@@ -1,0 +1,7 @@
+@mixin objective($selector) {
+  @if $objective-placeholders {
+    @extend #{"%" + $selector};
+  } @else {
+    @extend #{"." + $selector};
+  }
+}

@@ -1,0 +1,7 @@
+@function objective($selector) {
+  @if $objective-placeholders {
+    @return "%" + $selector;
+  } @else {
+    @return "." + $selector;
+  }
+}

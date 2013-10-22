@@ -1,6 +1,6 @@
 {
   "name": "objective",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "homepage": "http://github.com/tctcl/objective",
   "main": "dist/",
   "ignore": [
@@ -10,6 +10,9 @@
     ".gitignore",
     ".jshintrc",
     ".travis.yml",
-    "Gruntfile.coffee"
+    "Gruntfile.coffee",
+    "index.html",
+    "docs",
+    "package.json"
   ]
 }

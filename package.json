@@ -1,6 +1,6 @@
 {
   "name": "sass-objective",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Collection of CSS Objects and Helpers",
   "keywords": [],
   "homepage": "https://tctcl.github.com/objective",
@@ -29,8 +29,7 @@
     "tasks/"
   ],
   "bin": {},
-  "dependencies": {
-  },
+  "dependencies": {},
   "devDependencies": {
     "grunt": "~0.4.1",
     "grunt-init": "~0.2.1",
@@ -39,8 +38,7 @@
     "grunt-contrib-copy": "~0.4.1",
     "grunt-contrib-clean": "~0.5.0"
   },
-  "peerDependencies": {
-  },
+  "peerDependencies": {},
   "engines": {
     "node": ">=0.8.0",
     "npm": ">=1.2.10"

@@ -10,7 +10,7 @@ module.exports = (grunt) ->
 
   # Grunt Tasks
   grunt.initConfig
-    meta: version: '0.0.2'
+    meta: version: '0.0.4'
 
     # Clean
     clean: dist:

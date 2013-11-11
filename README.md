@@ -59,6 +59,8 @@ Also: [Clearfix](#clearfix)
 
 **`.focusable`** Extends the `.visuallyhidden` helper to allow the element to be [focusable when navigated to via the keyboard](http://h5bp.com/p).
 
+**`.text-hide`** [Hide text off screen](https://github.com/thoughtbot/bourbon/blob/master/app/assets/stylesheets/addons/_hide-text.scss)
+
 ### Image Replacement
 
 **`.img`** Hides text. Use with additional styling to add a height, width, and background. Must set height and width in order to hide text properly.

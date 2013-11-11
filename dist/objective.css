@@ -67,6 +67,16 @@
 }
 
 /**
+ * Hide-Text
+ * Hide text off screen
+ */
+.hide-text {
+  font: 0/0 a;
+  color: transparent;
+  text-shadow: none;
+}
+
+/**
  * Image Replacement
  */
 .img {

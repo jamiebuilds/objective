@@ -1,0 +1,10 @@
+/**
+ * Hide-Text
+ * Hide text off screen
+ */
+
+#{objective( "hide-text" )} {
+  font: 0/0 a;
+  color: transparent;
+  text-shadow: none;
+}
